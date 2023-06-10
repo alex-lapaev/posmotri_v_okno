@@ -9,11 +9,12 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +36,222 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.content {
+  margin: auto;
+  width: 1140px;
+  padding: 133px 0 133px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: start;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+  flex-grow: 0;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content__list-item {
+  width: 394px;
+  height: 107px;
+  flex-shrink: 0;
+}
+
+.content__list-item:not(:last-child) {
+  margin: 2px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.content__card-link:focus {
+  text-decoration: none;
+  outline: 1px solid white;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2px;
+  color: white;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+
+.content__video-card-thumbnail {
+  margin-left: 10px;
+  width: 194px;
+  height: 103px;
+}
+
+.result {
+  flex-shrink: 0;
+}
+
+.result__video-container {
+  position: relative;
+  height: 386px;
+  width: 711px;
+  margin-top: 78px;
+  margin-bottom: 36px;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-form__textfield {
+  appearance: none;
+  font-family: inherit; 
+  color: inherit;
+  background-color: black;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+input.search-form__textfield:focus {
+  border-style: dotted;
+  outline: none;
+}
+
+input.search-form__textfield:active {
+}
+
+.search-form__pseudo-checkbox {
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 26px;
+}
+
+.more-button {
+  width: calc(100% - 4px);
+  margin: 2px;
+}
+
+.button {
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  color: #ffffff;
+  background-color: black;
+  height: 34px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  text-decoration: underline;
+  outline-offset: 1px;
+  outline: 1px solid white;
 }
